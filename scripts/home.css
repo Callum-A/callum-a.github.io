@@ -1,0 +1,182 @@
+/* Whole page styling */
+
+html {
+    
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body, html {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+a {
+
+    text-decoration: none;
+
+}
+
+button {
+
+    width: 10%;
+    height: 5%;
+    background-color: black;
+    font-size: 16px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border: none;
+    cursor: pointer;
+    transition: 0.7s;
+
+}
+
+button:hover {
+
+    background-color: #323232;
+
+}
+
+/* Intro Section */
+
+#intro {
+
+    width: 100%;
+    background-image: url("../images/image.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+#floater {
+
+    float: left;
+    height: 50%;
+    width: 100%;
+    margin-bottom: -50px;
+
+}
+
+#introText {
+
+    vertical-align: middle;
+    clear: both;
+
+}
+
+#helloWorld {
+
+    text-align: center;
+    color: white;
+
+}
+
+#titles {
+
+    text-align: center;
+    color: white;
+
+}
+
+#callum {
+
+    text-align: center;
+    color: white;
+
+}
+
+#enter {
+
+    color: white;
+    text-align: center;
+    margin: auto;
+    display: block;
+    width: 10%;
+    padding: 20px 25px;
+    border: solid white;
+    font-size: 18px;
+    font-weight: bold; 
+    transition: 0.7s;
+
+}
+
+#enter:hover {
+
+    color: black;
+    background-color: white;
+
+}
+
+/* Navigation Bar */
+
+#navBar {
+
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+
+}
+
+.listEntry {
+
+    background-color: black;
+    float: left;
+
+}
+
+.listText {
+
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 50px;
+    transition: 0.7s;
+
+}
+
+.listText:hover {
+
+    background-color: #323232;
+    text-align: left;
+
+}
+
+/* Three Column Layout */
+
+.column {
+
+    float: left;
+    padding: 10px;
+
+}
+
+.left, .right {
+
+    width: 25%;
+
+}
+
+.middle {
+
+width: 50%;
+
+}
+
+#row:after {
+
+    clear: both;
+
+}
