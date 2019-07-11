@@ -17,12 +17,12 @@
             <button type="button" onclick="hideNav()" id="hideNav">Hide Navigation Bar</button>
         
             <ul id="navBar">
-        
                 <li class="listEntry"><a class="listText" href="#intro">Home</a></li>
                 <li class="listEntry"><a class="listText" href="#aboutMe">About Me</a></li>
                 <li class="listEntry"><a class="listText" href="#experience">Experience</a></li>
-                <li class="listEntry"><a class="listText" href="#contactDetails">Contact Details</a></li>
-                        
+                <li class="listEntry"><a class="listText" href="#projects">Projects</a></li>
+                <li class="listEntry"><a class="listText" href="#usefulLinks">Useful Links</a></li>
+                <li class="listEntry"><a class="listText" href="#contactDetails">Contact Details</a></li>    
             </ul>
         
         </header>
@@ -35,14 +35,15 @@
 
                 <div id="introText">
                     
-                    <h2 id="helloWorld">System.out.println("Hello, World!")</h2>
-                    <h1 id="callum">I'm Callum Anderson</h1>
-                    <h3 id="titles">| First-Year Computer Science Student |</h3>
+                    <h2 class="subheadings">System.out.println("Hello, World!")</h2>
+                    <h1 class="subheadings">I'm Callum Anderson</h1>
+                    <h3 class="subheadings">| First-Year Computer Science Student |</h3>
 
                 </div>
                 
                 <br>
                 <br>
+                
                 <a id="enter" href="#aboutMe">Enter Site</a>
         
             </div>
@@ -58,7 +59,7 @@
                     <h2>Introduction</h2>
 
                     <p>
-                        Hi there, my name is Callum Anderson I am currently 18 years old studying Computer Science at the University of East Anglia in the UK. 
+                        Hi there, my name is Callum Anderson I am currently 19 years old studying Computer Science at the University of East Anglia in the UK. 
                         Outside of term times I reside in Suffolk where I live with my family.
                     </p>
 
@@ -84,43 +85,66 @@
 
                     <h3>In-Progress</h3>
 
-                    <ul>
-
-                        <li>Programming 1 - Introduction to Java and OO Programming</li>
-                        <li>Mathematics for Computing B - Calculus, Matrices, Complex Numbers, Statistics</li>
-                        <li>Web-based Programming - HTML, CSS, JS, Flask</li>
-                        <li>Systems Development - Systems Development Lifecycle, Development Methods, Successful Systems</li>
-                        <li>Database Systems - SQL, PostgreSQL, psycopg2, Relational Algebra</li>
-                        <li>Computing Principles - Sets, Propositional Logic, Formal Language Theory, Graph Theory</li>
-
-                    </ul>
+                    <p>Waiting for module confirmation for second year at university.</p>
 
                     <h3>Completed</h3>
 
-                    <h2>Key-Skills</h2>
+                        <h4>First Year - Overall Grade 80.92% (First Class)</h4>
+
+                        <ul>
+                            <li>Programming 1 - Introduction to Java and OO Programming</li>
+                            <li>Mathematics for Computing B - Calculus, Matrices, Complex Numbers, Statistics</li>
+                            <li>Web-based Programming - HTML, CSS, JS, Flask</li>
+                            <li>Systems Development - Systems Development Lifecycle, Development Methods, Successful Systems</li>
+                            <li>Database Systems - SQL, PostgreSQL, psycopg2, Relational Algebra</li>
+                            <li>Computing Principles - Sets, Propositional Logic, Formal Language Theory, Graph Theory</li>
+                        </ul>
+
+                    <h2>Skills</h2>
 
                     <p>Below I have listed what I, and others, believe to be my key skills as person and as a programmer.</p>
 
-                    <ul>
+                    <div id="skills">
 
-                        <li>Critical Thinking</li>
-                        <li>Analytical Mind</li>
-                        <li>Charismatic</li>
-                        <li>Punctual</li>
-                        <li>Team-Player</li>
-
-                    </ul>
-
-                    <h2>Useful Links</h2>
-
-                    <ul>
+                        <ul>
+                            <li style="margin-top: -11pt">Languages</li>
+                            <ul>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                            <li>Libraries/Frameworks</li>
+                            <ul>
+                                <li>Flask</li>
+                                <li>Flask-Login</li>
+                                <li>Passlib</li>
+                                <li>WTForms</li>
+                                <li>SQLAlchemy</li>
+                                <li>Psycopg2</li>
+                            </ul>
+                            <li>Traits</li>
+                            <ul>
+                                <li>Critical Thinking</li>
+                                <li>Analytical Mind</li>
+                                <li>Charismatic</li>
+                                <li>Highly-motivated</li>
+                                <li>Punctual</li>
+                                <li>Team-Player</li>
+                            </ul>
+                            <li>Other</li>
+                            <ul>
+                                <li>Git</li>
+                                <li>Object Oriented Principles</li>
+                                <li>AGILE (SCRUM)</li>
+                                <li>Waterfall</li>
+                            </ul>
                         
-                        <li><a href="https://www.uea.ac.uk/">University of East Anglia</a></li>
-                        <li><a href="https://www.linkedin.com/in/callum-anderson-833a67180/">My LinkedIn Page</a></li>
-                        <li><a href="https://github.com/Callum-A">My Github Page</a></li>
-                        <li><a href="https://leetcode.com/calluma/">My LeetCode Page</a></li>
+                        </ul>
 
-                    </ul>
+                    </div>
 
                     <h1 id="experience">Experience</h1>
 
@@ -137,6 +161,36 @@
                         with three-hundred and sixty degree video. This DIY device we produced would be placed in the centre of a meeting a table and broadcast each image to the 
                         team in Belfast to ensure that every team member could be seen as well as heard.
                     </p>
+
+                    <h1 id="projects">Projects</h1>
+
+                    <h2>Project Suggestion Site</h2>
+
+                    <p>
+                        This website allows users to register, login and post project suggestions which must be approved by an admin in order to be displayed. It uses Flask as its web-framework and a
+                        PostgreSQL database to store users details such as username, password (hashed), and role as well as post details such as title, description and whether it is approved.
+                    </p>
+
+                    <a class="viewCode" href="https://github.com/Callum-A/project-suggestion-site" onclick="openInNewTab(this.href); return false;">View Code</a>
+
+                    <h2>Book Inventory Manager</h2>
+
+                    <p>
+                        A simple Java class based program to model a book invetory manager, the book class holds attributes which define a book e.g. title, author, ISBN etc. it also implements 
+                        the comparable interface to easily sort the books by release year. The inventory class contains a list of books with comparators to help sort the list of books, 
+                        it can also perform basic calculations such as total inventory value.
+                    </p>
+
+                    <a class="viewCode" href="https://github.com/Callum-A/BookInventoryManager" onclick="openInNewTab(this.href); return false;">View Code</a>
+
+                    <h1 id="usefulLinks">Useful Links</h1>
+
+                    <ul>
+                        <li><a href="https://www.uea.ac.uk/">University of East Anglia</a></li>
+                        <li><a href="https://www.linkedin.com/in/callum-anderson-833a67180/">My LinkedIn Page</a></li>
+                        <li><a href="https://github.com/Callum-A">My Github Page</a></li>
+                        <li><a href="https://leetcode.com/calluma/">My LeetCode Page</a></li>
+                    </ul>
 
                     <h1 id="contactDetails">Contact Details</h1>
 
