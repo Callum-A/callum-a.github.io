@@ -106,7 +106,7 @@ p {
 
 #hi {
     text-align: right;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #modules {

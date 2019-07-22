@@ -3,6 +3,7 @@
     <head>
         <title>Hey, I'm Callum - Projects</title>
         <link rel="stylesheet" type="text/css" href="scripts/main.css">
+        <link rel="stylesheet" type="text/css" href="scripts/projects.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="scripts/main.js"></script>
     </head>
@@ -29,29 +30,35 @@
                 <div id="main">
                     <h1>Projects</h1>
                     <hr>
-                    <p>
-                        Below are side projects which I have undertaken or may still be in development.
-                    </p>
-                    <h2>Project Suggestion Site</h2>
-                    <p>
-                        This website allows users to register, login and post project suggestions which must be approved by an admin in order to be displayed. 
-                        It uses Flask as its web-framework and a PostgreSQL database to store users details such as username, password (hashed), and role as well as post details such as title, 
-                        description and whether it is approved. 
-                        <a class="navlink" target="_blank" href="https://github.com/Callum-A/project-suggestion-site">View Code</a>.
-                    </p>
-                    <h2>Book Inventory Manager</h2>
-                    <p>
-                        A simple Java class based program to model a book invetory manager, the book class holds attributes which define a book e.g. title, author, ISBN etc. 
-                        it also implements the comparable interface to easily sort the books by release year. 
-                        The inventory class contains a list of books with comparators to help sort the list of books, it can also perform basic calculations such as total inventory value. 
-                        <a class="navlink" target="_blank" href="https://github.com/Callum-A/BookInventoryManager">View Code</a>. 
-                    </p>
-                    <h2>Personal Website</h2>
-                    <p>
-                        A personal website using HTML, CSS and Vanilla JavaScript to act as a portfolio including multiple sections, about me, education, projects. The main purpose 
-                        of this project is to prove basic front-end and design skills although this is not my main passion I still enjoy doing it somewhat. 
-                        <a class="navlink" target="_blank" href="https://github.com/Callum-A/callum-a.github.io">View Code</a>. 
-                    </p>
+                    <div class="projectwrapper">
+                        <div class="projectheading">
+                            <h2>Project Suggestion Site</h2>
+                        </div>
+                        <div class="projectheading">
+                            <h2>Personal Website</h2>
+                        </div>
+                        <div class="projectheading">
+                            <h2>Book Inventory Manager</h2>
+                        </div>
+                        <div class="projectbox">
+                            <img class="projectimage" src="images/suggestionsite.gif">
+                            <div class="middle">
+                                <a class="navlink project" href="https://github.com/Callum-A/project-suggestion-site" target="_blank">View Code</a>
+                            </div>
+                        </div>
+                        <div class="projectbox">
+                            <img class="projectimage" src="images/portfoliosite.gif">
+                            <div class="middle">
+                                <a class="navlink project" href="https://github.com/Callum-A/callum-a.github.io" target="_blank">View Code</a>
+                            </div>
+                        </div>
+                        <div class="projectbox">
+                            <img class="projectimage" src="images/bookdb.gif">
+                            <div class="middle">
+                                <a class="navlink project" href="https://github.com/Callum-A/BookInventoryManager" target="_blank">View Code</a>
+                            </div>
+                        </div>
+                    </div>
                     <hr>
                 </div>
             </div>
