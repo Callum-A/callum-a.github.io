@@ -1,68 +1,101 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Hey, I'm Callum - Projects</title>
-        <link rel="stylesheet" type="text/css" href="scripts/main.css">
-        <link rel="stylesheet" type="text/css" href="scripts/projects.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="scripts/main.js"></script>
-    </head>
-
-    <body>
-        <div class="wrapper">
-            <div class="column left">
-                <a href="index.html"><img id="me" src="images/me.jpg"></a>
-                <br>
-                <br>
-                <p id="hi"></p>
-                <nav id="sidebar">
-                    <ul id="navlist">
-                        <li><a class="navlink" href="index.html">Home</a></li>
-                        <li><a class="navlink" href="education.html">Education</a></li>
-                        <li><a class="navlink" href="projects.html">Projects</a></li>
-                    </ul>
-                </nav>
-                <a target="_blank" href="https://www.linkedin.com/in/callum-anderson-833a67180/"><i class="fa fa-linkedin-square"  style="font-size: 2em;"></i></a>
-                <a target="_blank" href="https://github.com/Callum-A"><i class="fa fa-github" style="font-size: 2em;"></i></a>
-                <a target="_top" href="mailto:callum.anderson@uea.ac.uk"><i class="fa fa-envelope" style="font-size: 2em;"></i></a>
-            </div>
-            <div class="column right">
-                <div id="main">
-                    <h1>Projects</h1>
-                    <hr>
-                    <div class="projectwrapper">
-                        <div class="projectheading">
-                            <h2>Project Suggestion Site</h2>
-                        </div>
-                        <div class="projectheading">
-                            <h2>Personal Website</h2>
-                        </div>
-                        <div class="projectheading">
-                            <h2>Book Inventory Manager</h2>
-                        </div>
-                        <div class="projectbox">
-                            <img class="projectimage" src="images/suggestionsite.gif">
-                            <div class="middle">
-                                <a class="navlink project" href="https://github.com/Callum-A/project-suggestion-site" target="_blank">View Code</a>
-                            </div>
-                        </div>
-                        <div class="projectbox">
-                            <img class="projectimage" src="images/portfoliosite.gif">
-                            <div class="middle">
-                                <a class="navlink project" href="https://github.com/Callum-A/callum-a.github.io" target="_blank">View Code</a>
-                            </div>
-                        </div>
-                        <div class="projectbox">
-                            <img class="projectimage" src="images/bookdb.gif">
-                            <div class="middle">
-                                <a class="navlink project" href="https://github.com/Callum-A/BookInventoryManager" target="_blank">View Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hey, I'm Callum - Home</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/main.js"></script>
+</head>
+<body>
+    <div class="md:flex md:pt-4">
+        <div class="md:block md:text-right md:w-1/4">
+            <img class="hidden md:block rounded-full w-1/2 m-auto mb-4" src="/images/me.jpg" alt="Picture of me">
+            <p id="hi" class="hidden md:block font-mono text-lg"></p>
+            <div class="flex -mb-4 md:w-1/4 md:flex-col md:mt-4 md:w-full md:pt-4 md:text-lg">
+                <div class="w-1/3 h-12 text-center md:w-full md:text-right">
+                    <a class="m-4 text-blue-500 border-dashed border-b-2 border-blue-700 hover:text-blue-300 hover:border-blue-500" href="/index.html">About Me</a>
+                </div>
+                <div class="w-1/3 h-12 text-center md:w-full md:text-right">
+                    <a class="m-4 text-blue-500 border-dashed border-b-2 border-blue-700 hover:text-blue-300 hover:border-blue-500" href="/education.html">Education</a>
+                </div>
+                <div class="w-1/3 h-12 text-center md:w-full md:text-right">
+                    <a class="m-4 text-blue-500 border-dashed border-b-2 border-blue-700 hover:text-blue-300 hover:border-blue-500" href="/index.html">Projects</a>
                 </div>
             </div>
+            <div class="flex -mb-4 md:flex-row-reverse">
+                <a target="_blank" href="https://www.linkedin.com/in/callum-anderson-833a67180/" class="m-4 mt-0 text-blue-700 w-1/3 text-center text-4xl md:w-auto md:text-right md:mr-1 md:ml-1 md:text-5xl hover:text-blue-500"><i class="fa fa-linkedin-square"></i></a>
+                <a target="_blank" href="https://github.com/Callum-A" class="m-4 mt-0 text-blue-700 w-1/3 text-center text-4xl md:w-auto md:text-right md:mr-1 md:ml-1 md:text-5xl hover:text-blue-500"><i class="fa fa-github"></i></a>
+                <a target="_top" href="mailto:callum.anderson@uea.ac.uk" class="m-4 mt-0 text-blue-700 w-1/3 text-center text-4xl md:w-auto md:text-right md:mr-1 md:ml-1 md:text-5xl hover:text-blue-500"><i class="fa fa-envelope"></i></a>
+            </div>
         </div>
-    </body>
+        <div class="pl-4 pr-4 md:ml-6 md:pr-16 md:pl-8 md:w-3/4">
+            <h1 class="text-2xl font-medium text-blue-700 md:text-5xl md:pb-4">Projects</h1>
+            <hr class="border border-blue-900 md:mb-6">
+            <div class="lg:flex">
+                <div class="md:ml-2 md:mr-2 max-w-md rounded overflow-hidden shadow-lg">
+                    <img class="w-full" src="images/suggestionsite.gif" alt="Portfolio Site">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2 text-blue-700">Project Suggestion Site</div>
+                        <p class="text-gray-700 text-base">
+                            Tired of seeing the r/cscareerquestions posts asking about project ideas? This website aims to solve that problem. It allows registered users 
+                            to post their project ideas with a description. Which will then be approved by admins from within the site, once the suggestions are approved they 
+                            will be displayed to the users on the main page of the webiste.
+                        </p>
+                    </div>
+                    <div class="font-bold text-l text-blue-600 text-center">
+                        <a target="_blank" class="border-b-2 border-dashed border-blue-700 hover:text-blue-400 hover:border-blue-500" href="https://github.com/Callum-A/project-suggestion-site">View Code</a>
+                    </div>
+                    <div class="px-6 py-4">
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 mr-2 mb-2 md:mb-0">Python</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 mr-2 mb-2 md:mb-0">Flask</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 mr-2 mb-2 md:mb-0">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="max-w-md rounded overflow-hidden shadow-lg">
+                    <img class="w-full" src="images/portfoliosite.gif" alt="Portfolio Site">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2 text-blue-700">Portfolio Site</div>
+                        <p class="text-gray-700 text-base">
+                            This is a website using static HTML, CSS and Vanilla JavaScript to act as a portfolio but also a personal website about me, as it currently stands it 
+                            contains a homepage, education section and a project section. Although front-end and design is not my passion I did this project to show I can still 
+                            do the basics of front-end and design.
+                        </p>
+                    </div>
+                    <div class="font-bold text-l text-blue-600 text-center">
+                        <a target="_blank" class="border-b-2 border-dashed border-blue-700 hover:text-blue-400 hover:border-blue-500" href="https://github.com/Callum-A/callum-a.github.io">View Code</a>
+                    </div>
+                    <div class="px-6 py-4">
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 mr-2">HTML</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 mr-2">CSS</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 mr-2">JavaScript</span>
+                    </div>
+                </div>
+                <div class="md:ml-2 md:mr-2 max-w-md rounded overflow-hidden shadow-lg">
+                    <img class="w-full" src="images/bookdb.gif" alt="Portfolio Site">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2 text-blue-700">Book Inventory Manager</div>
+                        <p class="text-gray-700 text-base">
+                            A simple Java class based program to simulate a book inventory manager. Features two main classes representing a book and an inventory of books. 
+                            The book class contains attributes used to define a book e.g. Title, Author, ISBN etc. also implements the comparable interface to sort the books 
+                            by release year. The inventory class contains a list of books.
+                        </p>
+                    </div>
+                    <div class="font-bold text-l text-blue-600 text-center">
+                        <a target="_blank" class="border-b-2 border-dashed border-blue-700 hover:text-blue-400 hover:border-blue-500" href="https://github.com/Callum-A/BookInventoryManager">View Code</a>
+                    </div>
+                    <div class="px-6 py-4">
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 mr-2">Java</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 mr-2">Comparators</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 mr-2">Interfaces</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="border border-blue-900 md:mb-6">
+        </div>
+    </div> 
 
+</body>
 </html>
