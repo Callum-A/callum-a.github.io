@@ -12,7 +12,7 @@
 <body>
     <div class="md:flex md:pt-4">
         <div class="md:block md:text-right md:w-1/4">
-            <img class="hidden md:block rounded-full w-1/2 m-auto mb-4" src="/images/me.jpg" alt="Picture of me">
+            <img class="hidden md:block rounded-full w-1/2 m-auto mb-4" src="images/me.jpg" alt="Picture of me">
             <p id="hi" class="hidden md:block font-mono text-lg"></p>
             <div class="flex -mb-4 md:w-1/4 md:flex-col md:mt-4 md:w-full md:pt-4 md:text-lg">
                 <div class="w-1/3 h-12 text-center md:w-full md:text-right">
@@ -34,9 +34,9 @@
         <div class="pl-4 pr-4 md:ml-6 md:pr-16 md:pl-8 md:w-3/4">
             <h1 class="text-2xl font-medium text-blue-700 md:text-5xl md:pb-4">Projects</h1>
             <hr class="border border-blue-900 md:mb-6">
-            <div class="lg:flex">
-                <div class="md:ml-2 md:mr-2 max-w-md rounded overflow-hidden shadow-lg">
-                    <img class="w-full" src="images/suggestionsite.gif" alt="Portfolio Site">
+            <div class="lg:flex flex-wrap">
+                <div class="md:ml-2 md:mr-2 lg:w-2/5 mb-4 rounded overflow-hidden shadow-lg border">
+                    <img class="w-full" src="images/suggestionsite.gif" alt="Project Suggestion Site">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2 text-blue-700">Project Suggestion Site</div>
                         <p class="text-gray-700 text-base">
@@ -54,7 +54,7 @@
                         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 mr-2 mb-2 md:mb-0">PostgreSQL</span>
                     </div>
                 </div>
-                <div class="max-w-md rounded overflow-hidden shadow-lg">
+                <div class="md:ml-2 md:mr-2 lg:w-2/5 mb-4 rounded overflow-hidden shadow-lg border">
                     <img class="w-full" src="images/portfoliosite.gif" alt="Portfolio Site">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2 text-blue-700">Portfolio Site</div>
@@ -73,8 +73,8 @@
                         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 mr-2">JavaScript</span>
                     </div>
                 </div>
-                <div class="md:ml-2 md:mr-2 max-w-md rounded overflow-hidden shadow-lg">
-                    <img class="w-full" src="images/bookdb.gif" alt="Portfolio Site">
+                <div class="md:ml-2 md:mr-2 lg:w-2/5 mb-4 rounded overflow-hidden shadow-lg border">
+                    <img class="w-full" src="images/bookdb.gif" alt="Book Inventory Manager">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2 text-blue-700">Book Inventory Manager</div>
                         <p class="text-gray-700 text-base">
@@ -92,8 +92,29 @@
                         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 mr-2">Interfaces</span>
                     </div>
                 </div>
+                <div class="md:ml-2 md:mr-2 lg:w-2/5 mb-4 rounded overflow-hidden shadow-lg border">
+                    <img class="w-full" src="images/reactclient.gif" alt="React Reddit Client">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2 text-blue-700">React Reddit Client</div>
+                        <p class="text-gray-700 text-base">
+                            A react application that allows the user to either pick from a drop down of subreddits or enter a subreddit of their own choosing and display the current hot post's
+                            titles as well as their score. The titles link to the original post on the Reddit website and the title above all of the posts links to the subreddit on the Reddit 
+                            website. This introduced me to the React Framework and was my first major JavaScript project.
+                        </p>
+                    </div>
+                    <div class="font-bold text-l text-blue-600 text-center">
+                        <a target="_blank" class="border-b-2 border-dashed border-blue-700 hover:text-blue-400 hover:border-blue-500" href="https://github.com/Callum-A/">View Code</a>
+                    </div>
+                    <div class="px-6 py-4">
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 mr-2">JavaScript</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 mr-2">React</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 mr-2">TailwindCSS</span>
+                    </div>
+                </div>
             </div>
-            <hr class="border border-blue-900 md:mb-6">
+            <div class="lg:flex">
+            </div>
+            <hr class="border border-blue-900 md:mb-6 md:mt-6">
         </div>
     </div> 
 
